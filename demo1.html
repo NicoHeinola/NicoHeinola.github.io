@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo 1</title>
+        <meta charset = "UTF-8">
+    </head>
+    <body>
+        <h1>Isoin otsikko</h1>
+        <h2>Toiseksi isoin otsikko</h2>
+        <h6>Pienin otsikko</h6>
+
+        <p>Tämä on teksti kappale, tag on "p", tulee sanasta paragraph.</p>
+        <p>Toinen kappale jättää selvän välin edelliseen, <br>
+        rivinvaihdon voi tehdä tagilla "br", tulee sanasta break.</p>
+
+        <h2>Listat</h2>
+        <h3>Tavallinen lista</h3>
+        <p>Tavallisen listan alkutag on "ul".</p>
+        <ul>
+            <li>Ensimmäinen elementti, tag on li.</li>
+            <li>Toinen elementti.</li>
+        </ul>
+
+        <h3>Numeroitu lista</h3>
+        <p>Numeroidun listan tag on "ol".</p>
+        <ol>
+            <li>Ensimmäinen elementti</li>
+            <li>Toinen elemenetti</li>
+        </ol>
+
+        <h2>Linkkejä</h2>
+        <h3>Ulkoiset sivut</h3>
+        <p>Ulkoisissa käytä koko URL:ää</p>
+        <p>Linkki alkaa tagilla "a" (anchor), href kertoo, mihin linkki vie. Tagien väliin tulee se teksti, minkä lukija näkee. <br>Jos haluat avata sivun toiselle välilehdelle, lisää target-attribuutti ja anna sen arvoksi _blank.</p>
+        <ul>
+            <li><a href="http://www.leeniemi.net" target="_blank">Leenan sivustolle tästä!</a></li>
+        </ul>
+
+        <h3>Linkki omille sivuille</h3>
+        <p>Linkit suhteellisina viittauksina.</p>
+        <p>Jos sivu on samassa kansiossa, voit viitata siihen suoraan sen nimellä, eism. a href="sivu2.html"</p>
+        <p>Jos sivu on alikansiossa, viitataan polulla alikansioon, esim. a href = "./alikansio/sivu2.html". <br> "./" ei ole pakollinen.</p>
+        <p>Jos sivu on rinnakkaisessa kansiossa, polkuun tulee viittaus ylöspäin, eism. a href = "../sivukansio/sivu3.html"</p>
+
+        <h3>Kuvat</h3>
+        <p>Kuva lisätään tagilla "img". Pakollinen attributti on alt (alternative), johon kirjoitetaan vaihtoehto, jos kuva ei toimi.<br>Toinen pakollinen on "src" (source), jossa kerrotaan, mistä kuva löytyy.</p>
+        <p><img src="./kuvat/otus.jpg" alt="Jokin meni vikaan näyttäessä kuvaa."></p>
+    </body>
+</html>
