@@ -1,0 +1,46 @@
+body{
+    /* background-color: #289e55;
+    /*background-image: url("../kuvat/taus.png");
+    background-repeat: repeat; /* KOMMENTTI*/
+    /*background-image: url("../kuvat/pysty.jpg");
+    background-repeat: repeat-y;*/
+    /*background-image: url("../kuvat/polle.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;*/
+    background-image: url("../kuvat/tumma.jpg");
+    background-size: 100%;
+    color: white;
+    margin-left: 10%;
+    font-family: "Arial Bold", sans-serif;
+    font-size: 1.3em;
+    background-attachment: fixed;
+}
+h1{
+    color: orange;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Times New Roman';
+    font-size: 5em;
+}
+h2{
+    font-family: Verdana, serif;
+    font-size: 2em;
+}
+#tarkein{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(73, 73, 73, 0.363);
+    color: tomato;
+}
+img{
+    width: 300px;
+    border: 3px rgb(0,255,0) solid;
+    padding: 10px;
+    margin-left: 100px;
+    outline: 3px dotted red
+}
+.kuvateksti{
+    color: turquoise;
+    font-style: italic;
+}
