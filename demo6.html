@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8">
+        <title>Demo 6</title>
+        <script>
+            function a(){
+                let element = document.getElementById("ika");
+                for(let i = 0; i < 100; i++){
+                    let newElement = document.createElement("option")
+                    newElement.value = (2000 - i).toString();
+                    newElement.innerHTML = (2000 - i).toString();
+                    element.appendChild(newElement);
+                }
+            }
+        </script>
+    </head>
+    <body onload="a()">
+        <h1>Lomake</h1>
+        <form action="https://www.leeniemi.net/julkiset19/luelomake.php" method="POST">
+            <br>Etunimi<br>
+            <input type="text" name="enimi" id="enimi"><br>
+
+            <br>Sukunimi<br>
+            <input type="text" name="snimi" id="snimi"><br>
+
+            <br>Äidinkieli<br>
+            <input type="radio" name="kieli" id="kieli" value="suomi">suomi<br>
+            <input type="radio" name="kieli" id="kieli" value="ruotsi">ruotsi<br>
+            <input type="radio" name="kieli" id="kieli" value="venaja">venäjä<br>
+
+            <br>Muu kielitaito<br>
+            <input type="checkbox" name="suomi" id="suomi" value="suomi">suomi<br>
+            <input type="checkbox" name="ruotsi" id="ruotsi" value="ruotsi">ruotsi<br>
+            <input type="checkbox" name="venaja" id="venaja" value="venaja">venäjä<br>
+            <input type="checkbox" name="saksa" id="saksa" value="saksa">saksa<br>
+            <input type="checkbox" name="englanti" id="englanti" value="englanti">englanti<br>
+
+            <br>Syntymäaika<br>
+            <select id="ika" name="vuosi">
+            </select><br>
+            <br>Muu<br>
+            <textarea name="vapaa">
+
+
+
+            </textarea><br><br>
+            <input type="reset" value="Tyhjennä tiedot">
+            <input type="submit" value="Lähetä tiedot">
+
+        </form>
+    </body>
+</html>

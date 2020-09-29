@@ -3,109 +3,188 @@
     <head>
         <meta charset="utf-8">
         <title>Demo 2</title>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="./css/demo4.css">
     </head>
     <body>
-        <h1>Kalatori</h1>
-        <img src="kuvat/kala.jpg" alt="kala">
-        <p>
-            <strong>Kalatori</strong> on kalastajalle mahdollisuus <b>myydä</b> saaliinsa tuoreena suoraan vähittäisasiakkaille.<br>
-            Se sijaitsee ihanteellisessa paikassa aivan vanhan Pirkkalankylän keskustassa.<br>
-            Torilla pidetään <mark>markkinapäiviä</mark> ja olemme saaneet torille vakituisen asiakaskunnan.<br>
-            Julkinen liikenne suosii toria, sijainti on nimen mukaisesti kalasataman vieressä ja linja-autopysäkkis on 50 metrin päässä.<br>
-        </p>
-        <h3>Vuoden 2020 markkinat</h3>
-        <img src="kuvat/tori.jpg" alt="tori">
-        <ul>
-            <li><s>Kevätmarkkinat</s> lauantai 11.4. klo 7–16<br></li>
-            <li>Juhannusmarkkinat tiistai 16.6. klo 7–15<br></li>
-            <li>Elomarkkinat tiistai 17.8. klo 7–15<br></li>
-            <li>Syysmarkkinat tiistai 13.10. klo 7–15<br></li>
-            <li>Joulumarkkinat tiistai 15.12. klo 7–15<br></li>
-        </ul>
-        <h3>Hinnasto</h3>
-        <table>
-            <tr>
-                <th>Tunnus</th>
-                <th>Ala m&#178;</th>
-                <th>Hinta &euro;</th>
-            </tr>
-            <tr>
-                <td>A1</td>
-                <td>15</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>A2</td>
-                <td>15</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>A3</td>
-                <td>15</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>A4</td>
-                <td>15</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>A5</td>
-                <td>15</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>B1</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B2</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B3</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B4</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B5</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B6</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B7</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B8</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B9</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>B10</td>
-                <td>8</td>
-                <td>40</td>
-            </tr>
-        </table>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1906.6424288939156!2d23.553976816376213!3d61.45316258245171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed9fa83d6429f%3A0xb142d41e406c097d!2sKierikantie%2018%2C%2033980%20Pirkkala!5e0!3m2!1sfi!2sfi!4v1598336808580!5m2!1sfi!2sfi" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <button onclick="topFunction()" id="top" title="Go to top">Top</button>
+        <header id="navigointi">
+            <ul>
+                <li><a href="#kalatori">Kalatori</a></li>
+                <li><a href="#markkinat">Markkinat</a></li>
+                <li><a href="#hinnasto">Hinnasto</a></li>
+                <li><a href="#yhteys">Ota yhteyttä</a></li>
+                <li><a href="#sijainti">Sijainti</a></li>
+            </ul>
+        </header>
+
+        <section id="kalatori">
+            <a name = "kalatori"><h1>Kalatori</h1></a>
+            <img src="kuvat/kala.jpg" alt="kala">
+            <p>
+                <strong>Kalatori</strong> on kalastajalle mahdollisuus <b>myydä</b> saaliinsa tuoreena suoraan vähittäisasiakkaille.<br>
+                Se sijaitsee ihanteellisessa paikassa aivan vanhan Pirkkalankylän keskustassa.<br>
+                Torilla pidetään <mark>markkinapäiviä</mark> ja olemme saaneet torille vakituisen asiakaskunnan.<br>
+                Julkinen liikenne suosii toria, sijainti on nimen mukaisesti kalasataman vieressä ja linja-autopysäkkis on 50 metrin päässä.<br>
+            </p>
+        </section>
+        <section id="markkinat">
+            <a name = "markkinat"><h3>Vuoden 2020 markkinat</h3></a>
+            <ul>
+                <li><s>Kevätmarkkinat</s> lauantai 11.4. klo 7–16<br></li>
+                <li>Juhannusmarkkinat tiistai 16.6. klo 7–15<br></li>
+                <li>Elomarkkinat tiistai 17.8. klo 7–15<br></li>
+                <li>Syysmarkkinat tiistai 13.10. klo 7–15<br></li>
+                <li>Joulumarkkinat tiistai 15.12. klo 7–15<br></li>
+            </ul>
+            <div id="kuvat">
+                    <img class="round" src="kuvat/mustekala.jpg" alt="mustekala">
+                    <img class="round" src="kuvat/pienikala.jpg" alt="pienikala">
+                    <img class="round" src="kuvat/rapu.jpg" alt="rapu"><br>
+                </div>
+            
+        </section>
+        <section id="hinnasto">
+            
+            <a name = "hinnasto"><h3>Hinnasto</h3></a>
+
+
+            <div id="hin">
+                <img src="kuvat/tori.jpg" alt="tori" width="600" height="269">
+                <table id>
+                    <tr>
+                        <th>Tunnus</th>
+                        <th>Ala m&#178;</th>
+                        <th>Hinta &euro;</th>
+                    </tr>
+                    <tr>
+                        <td>A1</td>
+                        <td>15</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>15</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>A3</td>
+                        <td>15</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>A4</td>
+                        <td>15</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>A5</td>
+                        <td>15</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>B1</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B2</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B3</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B4</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B5</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B6</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B7</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B8</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B9</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>B10</td>
+                        <td>8</td>
+                        <td>40</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="yhteys">
+            <a name = "yhteys"><h3>Ota yhteyttyä</h3></a>
+            <form action = "http://www.leeniemi.net/sasp20/lomakedemo4.php" method="POST">
+            
+                    Nimimerkki<br>
+                    <input type="text" name="nimi" required placeholder="Voit käyttää myös nimimerkkiäsi"><br>
+
+                    Sähköposti<br>
+                    <input type="email" name="email" required><br>
+
+                    Päiväys<br>
+                    <input type="date" name="pvm"><br>
+
+                    Syy<br>
+                    <Textarea rows="6" cols="50">
+
+                    </Textarea><br>
+
+                    <input type="reset" name="reset" value="Tyhjennä">
+                    <input type="submit" name="submit" value="Lähetä">
+            
+            </form>
+        </section>
+        <section id="sijainti">
+            <a name = "sijainti">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1906.6424288939156!2d23.553976816376213!3d61.45316258245171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed9fa83d6429f%3A0xb142d41e406c097d!2sKierikantie%2018%2C%2033980%20Pirkkala!5e0!3m2!1sfi!2sfi!4v1598336808580!5m2!1sfi!2sfi" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </a>
+        </section>
         <p>&copy;Nico</p>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("top");
+            // mybutton.style.display = "block";
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+
     </body>
 </html>

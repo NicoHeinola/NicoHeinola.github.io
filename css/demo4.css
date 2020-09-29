@@ -1,0 +1,107 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    font-size: 1.1em;
+}
+h1 {
+    font-family: 'Courier Prime', monospace;
+}
+section
+{
+    height: 100vh;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#kalatori {
+    background: cyan;
+}
+#hinnasto {
+    background: orange;
+}
+#markkinat {
+    background: lightgreen;
+}
+#sijainti {
+    background: orange;
+}
+#yhteys {
+    background: gray;
+}
+
+#top {
+display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#top:hover {
+    background-color: gray;
+}
+
+#navigointi ul {
+    display: table;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  #navigointi li {
+    float: left;
+  }
+  
+  #navigointi li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+
+#navigointi a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+img.round{
+    border-radius: 50%;
+}
+#kuvat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#hin{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    width: 50%;
+}
+#hin table{
+    padding-left: 50px;
+}
