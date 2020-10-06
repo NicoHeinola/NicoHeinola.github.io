@@ -1,0 +1,47 @@
+body {
+    align-content: center;
+}
+
+section{
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+    padding: 0px;
+    padding-right: 0px;
+}
+
+table {
+    width: 300px;
+}
+
+img{
+    margin: auto;
+
+}
+
+h1{
+    text-align: center;
+}
+
+#haku {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    display: flex;
+    position: fixed;
+
+    font-size: 3vh;
+    line-height: 10vh;
+
+    right: 0px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#haku a{
+    letter-spacing: 0px;
+    border: 0px;
+    padding: 30px;
+    color: black;
+}
