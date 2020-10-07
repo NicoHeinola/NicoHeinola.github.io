@@ -4,27 +4,30 @@
         <meta charset="utf-8">
         <title>Oula - lounaat</title>
         <link rel="stylesheet" href="../css/harjoitus2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"> 
         <!--script src="../js/harj5.js" type="text/javascript"></script>-->
     </head>
     <body onload="OnLoad()">
-        <header id="haku">
+        <nav id="haku">
             <ul>
-                <a href="#kuvat">Alkuun</a><br>
-                <a href="#lounaat">Lounaat</a><br>
-                <a href="#aukioloajat">Aukioloajat</a><br>
-                <a href="#poytavaraus">Pöytävaraus</a><br>
+                <a href="#kuvat">Alkuun</a><br><hr>
+                <a href="#lounaat">Lounaat</a><br><hr>
+                <a href="#aukioloajat">Aukioloajat</a><br><hr>
+                <a href="#poytavaraus">Pöytävaraus</a><br><hr>
                 <a href="#yhteystiedot">Yhteystiedot</a>
             </ul>
-        </header>
-        <section id="kuvat">
+        </nav>
+        <header id="kuvat">
             <h1 title="Parhaat ruoat koko maassa.">Ravintola Oula - lounaslista</h1>
-            <img title="Vihanneskeitto" src="../kuvat/vihanneskeitto.jpg" alt="Vihanneskeitto" width="373" height="250">
-            <img title="Feta-salaatti" src="../kuvat/feta_salaatti.jpg" alt="Feta-salaatti" width="373" height="250">
-            <img title="Kalkkunaleike" src="../kuvat/kalkkunaleike.jpg" alt="Kalkkunaleike" width="373" height="250">
-            <img title="Rapukeitto" src="../kuvat/rapukeitto.jpg" alt="Rapukeitto" width="373" height="250">
-            <img title="Savulohi" src="../kuvat/savulohi.jpg" alt="Savulohi" width="373" height="250">
-        </section>
-        <section id="lounaat">
+            <div style="font-size: 0px; display: flex;">
+                <img title="Kalkkunaleike" src="../kuvat/kalkkunaleike.jpg" alt="Kalkkunaleike" width="20%">
+                <img title="Rapukeitto" src="../kuvat/rapukeitto.jpg" alt="Rapukeitto" width="20%">
+                <img title="Savulohi" src="../kuvat/savulohi.jpg" alt="Savulohi" width="20%">
+                <img title="Vihanneskeitto" src="../kuvat/vihanneskeitto.jpg" alt="Vihanneskeitto" width="20%">
+                <img title="Feta-salaatti" src="../kuvat/feta_salaatti.jpg" alt="Feta-salaatti" width="20%">
+            </div>
+        </header>
+        <section id="lounaat" class="center">
             <h2>Lounaat</h2>
             <ul>
                 <li>
@@ -67,8 +70,6 @@
                         Suklaamousse<br>
                     </p>
                 </li>
-                <h3><u>Hinnat</u></h3>
-                <p>11 euroa, sisältää ruokajuoman - vesi, kotikalja, maito</p>
             </ul>
         </section>
         <section id="aukioloajat">
@@ -88,7 +89,7 @@
                 </tr>
             </table>
         </section>
-        <section id="poytavaraus">
+        <article id="poytavaraus">
             <h2>Pöytävaraus</h2>
             <form>
                 <label>Nimi</label><br>
@@ -105,8 +106,8 @@
                 <textarea rows="6" cols="50"></textarea><br>
                 <input type="submit">
             </form>
-        </section>
-        <section id="yhteystiedot">
+        </article>
+        <footer id="yhteystiedot">
             <h2>Yhteystiedot</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254499.81401764724!2d24.73851200305699!3d60.10986784840376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sfi!2sfi!4v1601962424377!5m2!1sfi!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <address>
@@ -118,6 +119,6 @@
                     Fax (016) 555 4756<br>
                     E-Mail: ravintola.oula@oulanet.fi
             </address>
-        </section>
+        </footer>
     </body>
 </html>
