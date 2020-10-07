@@ -37,6 +37,21 @@ section, footer, header, article{
 }
 
 .center{
-    margin-right: -50%;
-    left: 50%;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.center h2{
+    text-align: center;
+}
+
+.coloredSection {
+    width: 500px;
+    border-radius: 100px;
+    background-color: rgb(225, 225, 225);
+}
+
+#poytavaraus label{
+    line-height: 30px;
 }
