@@ -1,6 +1,14 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../kuvat/oula_tausta.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 h1{
     font-family: 'Sansita Swashed', cursive;
-    text-shadow: 2px 2px rgb(200, 200, 200);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 section, footer, header, article{
@@ -24,7 +32,7 @@ section, footer, header, article{
 }
 
 #haku a:hover{
-    background-color: rgba(200,200,200, 0.8);
+    background-color: rgba(255,255,255, 0.5);
 }
 
 #haku a{
@@ -49,9 +57,82 @@ section, footer, header, article{
 .coloredSection {
     width: 500px;
     border-radius: 100px;
-    background-color: rgb(225, 225, 225);
+    background-color: rgba(225, 225, 225, 0.8);
 }
 
 #poytavaraus label{
     line-height: 30px;
+}
+
+#neliö {
+    list-style: none; /* Remove default bullets */
+  }
+  
+#neliö li::before {
+content: "▪";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+color: rgb(177, 65, 46); /* Change the color */
+font-weight: bold; /* If you want it to be bold */
+display: inline-block; /* Needed to add space between the bullet and the text */
+width: 1em; /* Also needed for space (tweak if needed) */
+margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#yhteystiedot {
+    padding: 20px;
+    background: rgb(36, 36, 36);
+    color: white;
+    height: 300px;
+}
+
+#yhteystiedot2 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-content: center;
+    margin: auto;
+}
+
+#aukioloajat th, td {
+    width: 200px;
+    border: 1px solid white;
+    background: white;
+}
+
+#aukioloajat td {
+    text-align: center;
+}
+
+#aukioloajat h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color:white;
+    text-shadow:
+    -1px -1px black,
+    1px -1px black,
+    -1px 1px black,
+    1px 1px black;  
+}
+
+#aukioloajat table{
+    background: black;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#poytavaraus h2{
+    color: white;
+    text-shadow:
+    -1px -1px black,
+    1px -1px black,
+    -1px 1px black,
+    1px 1px black;  
+}
+
+#poytavaraus2 {
+    background: rgba(255, 255, 255, 0.726);
+    border-radius: 50px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }

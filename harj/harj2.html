@@ -18,7 +18,7 @@
             </ul>
         </nav>
         <header id="kuvat">
-            <h1 class="center" style="padding-bottom: 30px;" title="Parhaat ruoat koko maassa.">Ravintola Oula - lounaslista</h1>
+            <h1 class="center" style="padding-bottom: 30px; color:white;" title="Parhaat ruoat koko maassa.">Ravintola Oula - lounaslista</h1>
             <div style="font-size: 0px; display: flex;">
                 <img title="Kalkkunaleike" src="../kuvat/kalkkunaleike.jpg" alt="Kalkkunaleike" width="20%">
                 <img title="Rapukeitto" src="../kuvat/rapukeitto.jpg" alt="Rapukeitto" width="20%">
@@ -30,89 +30,82 @@
         <section id="lounaat" class="center coloredSection">
             <div style="text-align: left; display: inline-block">
             <h2>Lounaat</h2>
-            <ul>
-                <li>
+            <ul id="neliö">
                     <h4>Maanantai</h4>
-                    <p>
+                <li>
                         Juusto-vihanneskeittoa ja kokin sämpylä<br>
                         Paistettua lohta, sinappikastiketta, tilliperunoita ja kasviksia<br>
                         Marjakiisseliä ja hunajakermavaahtoa<br>
-                    </p>
                 </li>
+                <h4>Tiistai</h4>
                 <li>
-                    <h4>Tiistai</h4>
-                    <p>
                         Kana-fetajustosalaattia ja kokin sämpylä<br>
                         Paistettua punakampelaa, pinaattikastiketta ja perunamuusia<br>
-                        Pannukakkua, mansikkahilloa ja kermavaahtoa<br>                   
-                    </p>
+                        Pannukakkua, mansikkahilloa ja kermavaahtoa<br>              
                 </li>
+                <h4>Keskiviikko</h4>
                 <li>
-                    <h4>Keskiviikko</h4>
-                    <p>
                         Tomaatti-yrttikeittoa ja kokin sämpylä<br>
                         Kalkkunaleikettä, BBQ-kastiketta, riisiä ja kasviksia<br>
                         Omenapiirakkaa ja vaniljakastiketta<br>
-                    </p>
                 </li>
+                <h4>Torstai</h4>
                 <li>
-                    <h4>Torstai</h4>
-                    <p>
                         Rapukeittoa ja kokin sämpylä<br>
                         Poronkäristystä, perunamuusia, puolukkahilloa ja suolakurkkuja<br>
-                        Hedelmäsalaattia ja kinuskikastiketta<br>                  
-                    </p>
+                        Hedelmäsalaattia ja kinuskikastiketta<br>   
                 </li>
+                <h4>Perjantai</h4>
                 <li>
-                    <h4>Perjantai</h4>
-                    <p>
                         Savulohisalaatti ja kokin sämpylä<br>
                         Naudan paahtopaistia, punaviinikastiketta, kermaperunat ja kasviksia<br>
                         Suklaamousse<br>
-                    </p>
                 </li>
             </ul></div>
         </section>
         <section id="aukioloajat">
-            <h2>Aukioloajat</h2>
+            <h2 class="center">Aukioloajat</h2>
             <table>
-                <tr>
-                    <td>ma - pe</td>
-                    <td>10:30 - 15:00</td>
-                </tr>
-                <tr>
-                    <td>la</td>
-                    <td>11:00 - 15:00</td>
-                </tr>
-                <tr>
-                    <td>pe ja la</td>
-                    <td>17:00 - 21:00</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th>Ma-Pe</th>
+                        <th>Lauantai</th>
+                        <th>Sunnuntai</th>
+                    </tr>
+                    <tr>
+                        <td>10:30 - 15:00</td>
+                        <td>11:00 - 15:00</td>
+                        <td>17:00 - 21:00</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
-        <article id="poytavaraus">
+        <article id="poytavaraus" class="center">
+            <div id="bg">
             <h2>Pöytävaraus</h2>
-            <form>
-                <label>Nimi</label><br>
-                <input type="text"><br>
-                <label>Sähköposti</label><br>
-                <input type="text"><br>
-                <label>Puhelinnumero</label><br>
-                <input type="text"><br>
-                <label>Päivämäärä</label><br>
-                <input type="date"><br>
-                <label>Kellonaika</label><br>
-                <input type="time"><br>
-                <label>Erikoistoivomukset</label><br>
-                <textarea rows="6" cols="50"></textarea><br>
-                <input type="submit">
-            </form>
+            <div id="poytavaraus2">
+                <form>
+                    <label>Nimi</label><br>
+                    <input type="text"><br>
+                    <label>Sähköposti</label><br>
+                    <input type="text"><br>
+                    <label>Puhelinnumero</label><br>
+                    <input type="text"><br>
+                    <label>Päivämäärä</label><br>
+                    <input type="date"><br>
+                    <label>Kellonaika</label><br>
+                    <input type="time"><br>
+                    <label>Erikoistoivomukset</label><br>
+                    <textarea rows="6" cols="50"></textarea><br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
         </article>
         <footer id="yhteystiedot">
-            <h2>Yhteystiedot</h2>
-            <div style="display: flex">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254499.81401764724!2d24.73851200305699!3d60.10986784840376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sfi!2sfi!4v1601962424377!5m2!1sfi!2sfi" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <address>
+            <div id="yhteystiedot2">
+                <iframe style="border-radius: 10px; margin-right: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254499.81401764724!2d24.73851200305699!3d60.10986784840376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki!5e0!3m2!1sfi!2sfi!4v1601962424377!5m2!1sfi!2sfi" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <address style="align-self: center">
                         Ravintola Oula<br>
                         Hallituskatu 12<br>
                         96200 ROVANIEMI<br>
