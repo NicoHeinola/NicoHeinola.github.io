@@ -1,0 +1,55 @@
+
+/*body {
+    height:100%;
+}*/
+
+
+div.container {
+    display: grid;
+    width: 100%;
+    height:100%;
+    grid-template-columns: [left] 10rem auto 10rem [right];
+    grid-template-rows: 5rem auto 5rem;
+    grid-template-areas:
+    "head head head"
+    "panleft mainbody panright"
+    "foot foot foot";
+}
+
+header {
+    background: rgb(0,0,0,0.2);
+    grid-area: head;
+}
+
+footer {
+    background: rgb(0,0,0,0.2);
+    grid-area: foot;
+}
+.leftpanel {
+    background: rgb(0,0,0,0.1);  
+    grid-area: panleft;
+}
+
+.rightpanel {
+    background: rgb(0,0,0,0.1);  
+    grid-area: panright;
+}
+
+main {
+    grid-area: mainbody;
+}
+
+@media screen and (max-width: 50rem) {
+    .leftpanel {
+        grid-column-end: left;
+        display:none;
+    }
+    .rightpanel {
+        grid-column-start: right;
+        display:none;
+    }
+    main {
+        grid-column-start: left;
+        grid-column-end: right;
+    }
+}
