@@ -25,6 +25,7 @@
 }
 
 .drop-items a{
+    text-align: start;
     display: block;
     padding: 10px;
 }
