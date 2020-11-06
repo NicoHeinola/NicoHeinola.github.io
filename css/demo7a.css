@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 24px;
+    line-height: 3em;
+    text-align: center;
+}
+
+header {
+    background-color: orange;
+}
+
+main {
+    background-color: darkorange;
+}
+
+.left-sidebar {
+    background-color: orangered;
+}
+
+.right-sidebar {
+    background-color: orangered;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+.container, .content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (min-width: 768px){
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main {
+        order: 2;
+        flex: 3;
+        height: 80vh;
+    }
+
+    .left-sidebar {
+        order: 1;
+        flex: 1;
+    }
+
+    .right-sidebar {
+        order: 3;
+        flex: 1;
+    }
+}
