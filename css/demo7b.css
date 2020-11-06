@@ -1,56 +1,25 @@
-<<<<<<< HEAD
 * {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
-=======
+
 
 /*body {
     height:100%;
 }*/
 
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
 
 div.container {
     display: grid;
     width: 100%;
-<<<<<<< HEAD
-    height: 100%;
-=======
     height:100%;
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
     grid-template-columns: [left] 10rem auto 10rem [right];
     grid-template-rows: 5rem auto 5rem;
     grid-template-areas:
     "head head head"
     "panleft mainbody panright"
-<<<<<<< HEAD
-    "foot foot foot"
-    ;
-}
-
-header {
-    background: rgba(0,0,0,0.2);
-    grid-area: head;
-}
-
-
-footer {
-    color: white;
-    background: rgba(0,0,0,1);
-    grid-area: foot;
-}
-
-.leftpanel{
-    background: rgba(0,0,0,0.4);
-    grid-area: panleft;
-}
-
-.rightpanel{
-    background: rgba(0,0,0,0.4);
-=======
     "foot foot foot";
 }
 
@@ -70,27 +39,10 @@ footer {
 
 .rightpanel {
     background: rgb(0,0,0,0.1);  
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
     grid-area: panright;
 }
 
 main {
-<<<<<<< HEAD
-    background: rgba(0,0,0,0.3);
-    grid-area: mainbody;
-}
-
-@media screen and (max-width: 50rem){
-    .leftpanel{
-        grid-column-end: left;
-        display: none;
-    }
-    .rightpanel{
-        grid-column-start: right;
-        display: none;
-    }
-    main{
-=======
     grid-area: mainbody;
 }
 
@@ -104,7 +56,6 @@ main {
         display:none;
     }
     main {
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
         grid-column-start: left;
         grid-column-end: right;
     }

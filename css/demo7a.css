@@ -1,39 +1,4 @@
 * {
-<<<<<<< HEAD
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-
-body {
-    font-size: 24px;
-    line-height: 3em;
-    text-align: center;
-}
-
-header {
-    background-color: orange;
-}
-
-main {
-    background-color: darkorange;
-}
-
-.left-sidebar {
-    background-color: orangered;
-}
-
-.right-sidebar {
-    background-color: orangered;
-}
-
-footer {
-    color: white;
-    background-color: black;
-}
-
-.container, .content {
-=======
     box-sizing :border-box;
     padding: 0;
     margin: 0;
@@ -68,31 +33,20 @@ footer {
 
 .container,
 .content {
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
     display: flex;
     flex-direction: column;
 }
 
-<<<<<<< HEAD
-@media all and (min-width: 768px){
-=======
 @media all and (min-width: 768px) {
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
     .content {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     main {
-<<<<<<< HEAD
-        order: 2;
-        flex: 3;
-        height: 80vh;
-=======
         flex: 2;
         order: 2;
         min-height: 80vh;
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
     }
 
     .left-sidebar {
@@ -104,8 +58,5 @@ footer {
         order: 3;
         flex: 1;
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> c27dab8a9efd4dc064d14fde610afdc70a1d17fa
 }
