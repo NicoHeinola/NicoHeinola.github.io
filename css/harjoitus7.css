@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    color: rgb(249, 222, 201);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ----------------------------------------------- */
+
+nav {
+    background: rgb(58, 64, 90);
+}
+
+/* ----------------------------------------------- */
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+}
+
+.drop-items {
+    display: none;
+}
+
+.drop-btn {
+    background: none;
+    border: 0px;
+    padding: 0px;
+}
