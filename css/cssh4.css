@@ -1,7 +1,113 @@
-#liike{
-
+#rotate, #scale, #skew, #matrix, #rotate3d, #animate, #transition {
+    background: red;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 30px;
 }
 
-@keyframes liike{
-    
+#rotate:hover {
+    animation-name: "rotate";
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#scale:hover {
+    animation-name: "scale";
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scale {
+    0% {transform: scale(1, 1);}
+    50% {transform: scale(0.5, 0.5);}
+    100% {transform: scale(1, 1);}
+}
+
+#skew:hover {
+    animation-name: "skew";
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes skew {
+    0% {transform: skew(0);}
+    25% {transform: skew(30deg);}
+    75% {transform: skew(-30deg);}
+    100% {transform: skew(0);}
+}
+
+#matrix:hover {
+    animation-name: "matrix";
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes matrix {
+    0% {transform: matrix(1, 0, 0, 1, 0, 0);}
+    50% {transform: matrix(0.75, -1.75, 0.1, 0.75, 15, 15);}
+    100% {transform: matrix(1, 0, 0, 1, 0, 0);}
+}
+
+#rotate3d:hover {
+    animation-name: "rotate3d";
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate3d {
+    0% {transform: rotateZ(0);}
+    50% {transform: rotateZ(360deg);}
+    100% {transform: rotateZ(0);}
+}
+
+#animate, #transition {
+    font-size: 1.1em;
+}
+
+#animate_activate{
+    width: 75px;
+    height: 75px;
+}
+
+#animate_activate:hover #animate{
+    position: relative;
+    animation-name: "animate";
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#animate_activate:hover {
+    border: 2px solid black;
+}
+
+@keyframes animate{
+    0% {left: 0; top: 0; background: rgb(255, 0, 0);}
+    25% {left: 200px; top: 0; background: rgb(255, 255, 0);}
+    50% {left: 200px; top: -200px; background: rgb(0, 0, 255);}
+    75% {left: 0; top: -200px; background: rgb(0, 255, 0);}
+    100% {left: 0; top: 0; background: rgb(255, 0, 0);}
+}
+
+#transition{
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#transition:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(180deg);
 }
