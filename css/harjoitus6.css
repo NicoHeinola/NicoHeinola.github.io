@@ -1,39 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
-}
-
-.container {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-}
-
-main {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-header {
-    background: lightblue;
-}
-
-nav {
-    background: cyan;
-}
-
-article {
-    background: blue;
-}
-
-.left-sidebar {
-    background: orange;
-}
-
-.right-sidebar {
-    background: green;
-}
-
-footer {
-    background: greenyellow;
 }
