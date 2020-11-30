@@ -1,0 +1,59 @@
+nav {
+    display: flex;
+
+    padding: 10px;
+    width: 100%;
+    background: rgb(10, 10, 10);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img{
+    border: 0;
+    width: 96px;
+    height: 96px;
+    background: rgb(66, 146, 0);
+}
+
+.logo p {
+    padding-left: 20px;
+    font-size: 50px;
+    margin: auto 0 auto 0;
+}
+
+.link-container {
+    margin: auto 0 auto 0;
+    margin-left: auto;
+}
+
+.link-container a{
+    float: left;
+    
+    color: black;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+
+    margin-right: 30px;
+
+    text-decoration: none;
+}
+
+.link-container a:hover {
+    color: rgb(95, 95, 95)
+}
+
+.link-container a *{
+    margin: 0;
+}
+
+.link-container a p{
+    font-size: 25px;
+}
+
+.link-container a img {
+    margin: auto;
+}
