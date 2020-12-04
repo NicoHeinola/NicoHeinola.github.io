@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.light-text, a {
+    color: rgb(249,222,201);
+}
+
+.dark-text {
+    color: rgb(58,64,90);
+}
+
+.light-bg {
+    background: rgb(249,222,201);
+}
+
+.dark-bg {
+    background: rgb(58,64,90);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.no-mp {
+    margin: 0;
+    padding: 0;
+}

@@ -5,74 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/harjoitus7_nav.css">
     <link rel="stylesheet" type="text/css" href="./css/harjoitus7_esittely.css">
+    <link rel="stylesheet" type="text/css" href="./css/harjoitus7_style.css">
     <script src="./js/harjoitus7.js"></script>
     <title>Harjoitus 7 :(</title>
 </head>
-<body>
+<body class="no-mp">
     <section id="esittely">
-        <nav>
-            <div class="mobile">
-                <img id="logo" src="./kuvat/Logo-1.svg">
-                <button class="menu" onclick="ToggleMenuMobile()">Menu</button>
-            </div>
-            <div id="nav_links">
-                <div name="mobile-transition" class="container">
-                    <div class="container-btn">
-                        <button onclick="ToggleMenu()">Tietoa</button>
+        <nav class="dark-bg light-text">
+            <div id="nav-links">
+                <div class="container">
+                    <div class="link-button">
+                        <button class="no-mp light-text">Tietoja</button>
+                        <p class="open-img"></p>
                     </div>
-                    <div id="tietoa_items" class="items">
+                    <div class="items dark-bg" id="tietoa_items">
                         <ol>
-                            <li>
-                                <div class="items-padding-right">
-                                    <ul>
-                                        <li class="items-padding-bottom"><a href="#">Linkki 1</a></li>
-                                        <li class="items-padding-bottom"><a href="#">Linkki 2</a></li>
-                                        <li><a href="#">Linkki 3</a></li>
-                                    </ul>
+                            <li class="padding-bottom">
+                                <div class="div-size-right">
+                                    <div class="arrow-button">
+                                        <a href="#">Tutustu</a>
+                                        <p class="arrow-right"></p>
+                                    </div>
+                                    <div class="arrow-button">
+                                        <a href="#">Varainhankinta</a>
+                                        <p class="arrow-right"></p>
+                                    </div>
+                                    <div class="arrow-button">
+                                        <a href="#">Töihin</a>
+                                        <p class="arrow-right"></p>
+                                    </div>
                                 </div>
                                 <div>
-                                    <a href="#">Linkki 4</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus odio velit, ut accumsan </p>
+                                    <div class="arrow-button">
+                                        <a href="#">Laatu</a>
+                                        <p class="arrow-right"></p>
+                                    </div>
+                                    <p>ASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJ</p>
                                 </div>
                             </li>
-                            <li class="items-padding-top">
-                                <div class="items-padding-right">
-                                    <a href="#">Linkki 5</a>
-                                    <p>Praesent lobortis nunc in fringilla sodales. Phasellus aliquam facilisis sapien vitae commodo</p>
+                            <li>
+                                <div class="div-size-right">
+                                    <div class="arrow-button" onclick="ToggleItems()">
+                                        <a href="#">Tietosuoja</a>
+                                        <p class="arrow-right"></p>
+                                    </div>
+                                    <p>ASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJ</p>
                                 </div>
                                 <div>
-                                    <a href="#">Linkki 6</a>
-                                    <p>congue. Nam id mi pulvinar est mattis auctor at et ipsum. Sed id felis eu augue vehicula malesuada vitae eget nibh. Mauris bibendum nibh eget ipsum hendrerit, ac mattis </p>
+                                    <div class="arrow-button">
+                                        <a href="#">Kansainvälisyys</a>
+                                        <p class="arrow-right"></p>
+                                    </div>
+                                    <p>ASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJ</p>
                                 </div>
                             </li>
                         </ol>
                     </div>
                 </div>
-                <a name="mobile-transition" id="link1" href="#">Yhteystiedot</a>
-                <hr name="mobile-transition" id="separator">
-                <a name="mobile-transition" id="link2" href="#">Kirjaudu</a>
-                <ol class="lang">
-                    <li><a href="#">FI</a></li>
-                    |
-                    <li><a href="#">EN</a></li>
-                    |
-                    <li><a href="#">SE</a></li>
-                </ol>
-                <div name="mobile-transition" class="lang-mobile">
-                    <p>Kieli</p>
-                    <ol>
-                        <li><a href="#">suomi</a></li>
-                        <li><a href="#">svenska</a></li>
-                        <li><a href="#">english</a></li>
-                    </ol>
+                <div class="link-button">
+                    <a href="#">Yhteystiedot</a>
+                </div>
+                <div class="link-button">
+                    <a href="#">Kirjaudu</a>
+                    <img alt="lukko" src="./kuvat/lock.svg">
+                </div>
+                <div class="link-button display-block extra-padding-right">
+                    <a href="#"><b>FI</b></a> |
+                    <a href="#">SE</a> |
+                    <a href="#">EN</a>
                 </div>
             </div>
         </nav>
-        <div class="top_bar">
-            <img src="./kuvat/Logo-1.svg">
-            <p>Palvelut</p>
-            <p>Tutkimus ja kehitys</p>
-        </div>
     </section>
 </body>
 </html>
