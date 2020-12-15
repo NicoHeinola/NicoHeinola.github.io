@@ -8,6 +8,6 @@ function ToggleItemMenu(){
 function ToggleItemMenuMobile(){
     let menu = document.getElementById("nav-items")
     let arrow = document.getElementById("menu-arrow-mobile")
-    menu.classList.toggle("menu-visible");
+    menu.classList.toggle("menu-visible-mobile");
     arrow.classList.toggle("down");
 }
