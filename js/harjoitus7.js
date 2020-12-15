@@ -1,26 +1,13 @@
-var menu_toggled = false;
-
-
-function ToggleMenu(){
-    let menu = document.getElementById("tietoa_items");
-    if(menu_toggled){
-        menu.classList.add("items-transition-back")
-        menu.classList.toggle("items-transition")
-        menu_toggled = false;
-    } else {
-        menu.classList.add("items-transition")
-        menu_toggled = true;
-    }
+function ToggleItemMenu(){
+    let menu = document.getElementById("menu")
+    let arrow = document.getElementById("menu-arrow")
+    menu.classList.toggle("menu-visible");
+    arrow.classList.toggle("down");
 }
 
-function ToggleMenuMobile(){
-    let menu = document.getElementById("nav_links");
-    if(menu_toggled){
-        menu.classList.add("nav-transition-back")
-        menu.classList.toggle("nav-transition")
-        menu_toggled = false;
-    } else {
-        menu.classList.add("nav-transition")
-        menu_toggled = true;
-    }
+function ToggleItemMenuMobile(){
+    let menu = document.getElementById("nav-items")
+    let arrow = document.getElementById("menu-arrow-mobile")
+    menu.classList.toggle("menu-visible");
+    arrow.classList.toggle("down");
 }

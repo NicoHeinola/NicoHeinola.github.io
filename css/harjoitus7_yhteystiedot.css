@@ -1,0 +1,103 @@
+.yhteystiedot {
+    display: flex;
+    flex-direction: column;
+    background: rgb(58,64,90);
+    color: rgb(249,222,201);
+    padding: 30px;
+}
+
+.y-row-1 {
+    padding: 30px;
+}
+
+.y-row-1-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.y-row-a {
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.y-row-a a {
+    padding-bottom: 12px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.y-row-3-pad {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.y-row-3 {
+    padding: 30px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.y-row-4 {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.y-row-2 {
+    padding: 30px;
+}
+
+.y-row-2 img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.y-row-3, .y-row-4 {
+    font-size: 10px;
+}
+
+@media all and (max-width: 1040px) {
+    .yhteystiedot {
+        padding: 35px;
+    }
+
+    .y-row-1 {
+        padding-left: 0;
+    }
+
+    .y-row-1-sub {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .y-row-a {
+        padding: 0;
+    }
+    
+
+    .y-row-2 img {
+        font-size: 10px;
+    }
+
+    .y-row-3 {
+        flex-wrap: wrap;
+        font-size: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .y-row-4 {
+        padding-top: 20px;
+    }
+
+    .y-row-3-1 {
+        flex-basis: 100%;
+        max-width: min-content;
+        text-align: center;
+    }
+}

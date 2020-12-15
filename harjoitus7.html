@@ -6,76 +6,238 @@
     <link rel="stylesheet" type="text/css" href="./css/harjoitus7_nav.css">
     <link rel="stylesheet" type="text/css" href="./css/harjoitus7_esittely.css">
     <link rel="stylesheet" type="text/css" href="./css/harjoitus7_style.css">
+    <link rel="stylesheet" type="text/css" href="./css/harjoitus7_row_1.css">
+    <link rel="stylesheet" type="text/css" href="./css/harjoitus7_row_2.css">
+    <link rel="stylesheet" type="text/css" href="./css/harjoitus7_yhteystiedot.css">
     <script src="./js/harjoitus7.js"></script>
-    <title>Harjoitus 7 :(</title>
+    <title>Harjoitus 7</title>
 </head>
-<body class="no-mp">
-    <section id="esittely">
-        <nav class="dark-bg light-text">
-            <div id="nav-links">
-                <div class="container">
-                    <div class="link-button">
-                        <button class="no-mp light-text">Tietoja</button>
-                        <p class="open-img"></p>
+<body>
+    <nav>
+        <div class="only-visible-mobile" id="menu-mobile">
+            <img id="logo-mobile" src="./kuvat/Logo-1.svg">
+            <div id="menu-button" class="large-item nav-item" onclick="ToggleItemMenuMobile()">
+                <a href="#">Menu</a>
+                <p class="arrow up" id="menu-arrow-mobile"></p>
+            </div>
+        </div>
+        <div id="nav-items">
+            <div class="container">
+                <div class="large-item nav-item" onclick="ToggleItemMenu()">
+                    <a href="#">Tietoja</a>
+                    <p class="arrow up no-visible-mobile" id="menu-arrow"></p>
+                    <p class="arrow right only-visible-mobile"></p>
+                </div>
+                <div class="items mobile-left-1" id="menu">
+                    <div class="double-holder dholder-1">
+                        <div class="holder holder-1">
+                            <div class="large-item padding-b">
+                                <a href="#">Tutustu</a>
+                                <p class="arrow right"></p>
+                            </div>
+                            <div class="large-item padding-b">
+                                <a href="#">Varainhankinta</a>
+                                <p class="arrow right"></p>
+                            </div>
+                            <div class="large-item padding-b">
+                                <a href="#">Töihin</a>
+                                <p class="arrow right"></p>
+                            </div>
+                        </div>
+                        <div class="holder holder-2">
+                            <div class="large-item padding-b">
+                                <a href="#">Laatu</a>
+                                <p class="arrow right"></p>
+                            </div>
+                            <p class="holder-info">AIEJWOAEJ OAWJEOIAWJ OEIJAWOEIJ AWIOEJOAWI JEOAWJ IOJ OJ IJ AWEOIJAWIOEJO AIWJEO IAWJOEJAWO JJIO I JOAIWJ EOIAWJE</p>
+                        </div>
                     </div>
-                    <div class="items dark-bg" id="tietoa_items">
-                        <ol>
-                            <li class="padding-bottom">
-                                <div class="div-size-right">
-                                    <div class="arrow-button">
-                                        <a href="#">Tutustu</a>
-                                        <p class="arrow-right"></p>
-                                    </div>
-                                    <div class="arrow-button">
-                                        <a href="#">Varainhankinta</a>
-                                        <p class="arrow-right"></p>
-                                    </div>
-                                    <div class="arrow-button">
-                                        <a href="#">Töihin</a>
-                                        <p class="arrow-right"></p>
-                                    </div>
+                    <div class="double-holder dholder-2">
+                        <div class="holder holder-1">
+                            <div class="holder">
+                                <div class="large-item padding-b">
+                                    <a href="#">Tietosuoja</a>
+                                    <p class="arrow right"></p>
                                 </div>
-                                <div>
-                                    <div class="arrow-button">
-                                        <a href="#">Laatu</a>
-                                        <p class="arrow-right"></p>
-                                    </div>
-                                    <p>ASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJ</p>
+                                <p class="holder-info">AIEJWOAEJ OAWJEOIAWJ OEIJAWOEIJ AWIOEJOAWI JEOAWJ IOJ OJ IJ AWEOIJAWIOEJO AIWJEO IAWJOEJAWO JJIO I JOAIWJ EOIAWJE</p>
+                            </div>
+                        </div>
+                        <div class="holder holder-2">
+                            <div class="holder">
+                                <div class="large-item padding-b">
+                                    <a href="#">Kansainvälisyys</a>
+                                    <p class="arrow right"></p>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="div-size-right">
-                                    <div class="arrow-button" onclick="ToggleItems()">
-                                        <a href="#">Tietosuoja</a>
-                                        <p class="arrow-right"></p>
-                                    </div>
-                                    <p>ASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJ</p>
-                                </div>
-                                <div>
-                                    <div class="arrow-button">
-                                        <a href="#">Kansainvälisyys</a>
-                                        <p class="arrow-right"></p>
-                                    </div>
-                                    <p>ASODAWOIJEOIAWJ ADJOIAJDOAIJWE AWOIEJAWOEIJOA EWAIJ</p>
-                                </div>
-                            </li>
-                        </ol>
+                                <p class="holder-info">AIEJWOAEJ OAWJEOIAWJ OEIJAWOEIJ AWIOEJOAWI JEOAWJ IOJ OJ IJ AWEOIJAWIOEJO AIWJEO IAWJOEJAWO JJIO I JOAIWJ EOIAWJE</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="link-button">
-                    <a href="#">Yhteystiedot</a>
-                </div>
-                <div class="link-button">
-                    <a href="#">Kirjaudu</a>
-                    <img alt="lukko" src="./kuvat/lock.svg">
-                </div>
-                <div class="link-button display-block extra-padding-right">
-                    <a href="#"><b>FI</b></a> |
-                    <a href="#">SE</a> |
-                    <a href="#">EN</a>
                 </div>
             </div>
-        </nav>
-    </section>
+            <a class="nav-item large-item" href="#">Yhteystiedot</a>
+            <hr class="only-visible-mobile">
+            <div class="large-item nav-item" id="kirjaudu">
+                <a href="#">Kirjaudu</a>
+                <img id="lock" src="./kuvat/lock.svg">
+            </div>
+            <div class="large-item nav-item no-visible-mobile">
+                <a href="#"><b>FI</b></a>
+                |
+                <a href="#">SE</a>
+                |
+                <a href="#">EN</a>
+            </div>
+            <div id="lang-mobile" class="only-visible-mobile">
+                <p class="large-item">Kieli</p>
+                <a href="#" class="large-item mobile-left-1"><b>suomi</b></a>
+                <a href="#" class="large-item mobile-left-1">ruotsi</a>
+                <a href="#" class="large-item mobile-left-1">englanti</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="bg"></div>
+        <div id="row-1">
+            <img src="./kuvat/Logo-1.svg" class="no-visible-mobile">
+            <div id="otsikot" class="no-visible-mobile">
+                <h1>Palvelut</h1>
+                <h1 id="otsikko-1">Tutkimus ja kehitys</h1>
+            </div>
+        </div>
+        <div id="bottom-row">
+            <h1>Hanki pälä pälä....</h1>
+            <p id="info">Kellot soiehwe8w e hwe2 2weh Kellot soiajweioa jawjekl al kj lkj lkj awjeioawj eoaj aowj oiwa jowi jo wiehwi ueh w uiwhuehw ehwe8w e hwe2 2weh Kellot soi aisjeoae jaiej waiji ajweioa jawjekl al kj lkj lkj awjeioawj eoaj aowj oiwa jowi jo wiehwi ueh w uiwhuehw ehwe8w e hwe2 2weh Kellot soi aisjeoae jaiej waiji ajweioa jawjekl al kj lkj lkj awjeioawj eoaj aowj oiwa jowi jo wiehwi ueh w uiwhuehw ehwe8w e hwe2 2weh</p>
+        </div>
+    </main>
+    <div class="all">
+        <div class="row-1">
+            <div class="first-container">
+                <div class="container-1">
+                    <div class="container-1-image">
+                        <img src="./kuvat/background-bell-butterfly.jpg">
+                    </div>
+                    <div class="text">
+                        <h1>Lokakuun yhteishaku</h1>
+                        <p>Tekstiä awopejawi eaj eioawej o stiä awopejawi eawjioe ioawj eioawej o stiä awopejawi eawjioe ioawj eioawej ostiä awopejawi eawjioe ioawj eioawej ostiä awopejawi eawjioe ioawj eioawej oj eioawej o stiä awopejawi eawjioe ioawj eioawej oje ioawe jiawjioejiaw ji awjeiawe jaw ejawj eawji eoawje oawej oaw</p>
+                    </div>
+                    <div class="button-container">
+                        <a href="#"><button class="container-button-1">Hae meille</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="container-1">
+                    <div class="container-1-image">
+                        <img src="./kuvat/background-bell-butterfly.jpg">
+                    </div>
+                    <div class="text">
+                        <h1>Lokakuun yhteishaku</h1>
+                        <p>Tekstiä awopejawi eaj eioawej o stiä awopejawi eawjioe ioawj eioawej o stiä awopejawi eawjioe ioawj eioawej ostiä awopejawi eawjioe ioawj eioawej ostiä awopejawi eawjioe ioawj eioawej oj eioawej o stiä awopejawi eawjioe ioawj eioawej oje ioawe jiawjioejiaw ji awjeiawe jaw ejawj eawji eoawje oawej oaw</p>
+                    </div>
+                    <div class="button-container">
+                        <a href="#"><button class="container-button-1">Hae meille</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="container-1">
+                    <div class="container-1-image">
+                        <img src="./kuvat/background-bell-butterfly.jpg">
+                    </div>
+                    <div class="text">
+                        <h1>Lokakuun yhteishaku</h1>
+                        <p>Tekstiä awopejawi eaj eioawej o stiä awopejawi eawjioe ioawj eioawej o stiä awopejawi eawjioe ioawj eioawej ostiä awopejawi eawjioe ioawj eioawej ostiä awopejawi eawjioe ioawj eioawej oj eioawej o stiä awopejawi eawjioe ioawj eioawej oje ioawe jiawjioejiaw ji awjeiawe jaw ejawj eawji eoawje oawej oaw</p>
+                    </div>
+                    <div class="button-container">
+                        <a href="#"><button class="container-button-1">Hae meille</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="container-2">
+                <img class="container-2-image" src="./kuvat/background-bell-butterfly.jpg">
+                <div class="container-2-2">
+                    <div class="container-2-text">
+                        <h1>Tekstiä jeee</h1>
+                        <p>awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjawoejawoeawoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie joiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie oie j</p>
+                    </div>
+                    <a href="#" class="container-2-button">
+                        <a>Lue lisää
+                            <img src="./kuvat/arrow-right.png" class="container-2-arrow">
+                        </a>
+                    </a>
+                </div>
+            </div>
+            <div class="container-2">
+                <img class="container-2-image only-visible-mobile" src="./kuvat/background-bell-butterfly.jpg">
+                <div class="container-2-2" style="padding-left: 0 !important;">
+                    <div class="container-2-text">
+                        <h1>Tekstiä jeee</h1>
+                        <p>awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjawoejawoeawoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie joiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie oie j</p>
+                    </div>
+                    <a href="#" class="container-2-button">
+                        <a>Lue lisää
+                            <img src="./kuvat/arrow-right.png" class="container-2-arrow">
+                        </a>
+                    </a>
+                </div>
+                <img class="container-2-image no-visible-mobile" src="./kuvat/background-bell-butterfly.jpg">
+            </div>
+            <div class="container-2">
+                <img class="container-2-image" src="./kuvat/background-bell-butterfly.jpg">
+                <div class="container-2-2">
+                    <div class="container-2-text">
+                        <h1>Tekstiä jeee</h1>
+                        <p>awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjawoejawoeawoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie joiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie awoejawoejoiawjeoawjieo iawjeoi awjoiaj eawioje oawijo wiajoei awjoie oie j</p>
+                    </div>
+                    <a href="#" class="container-2-button">
+                        <a>Lue lisää
+                            <img src="./kuvat/arrow-right.png" class="container-2-arrow">
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yhteystiedot">
+        <div class="y-row-1">
+            <div class="y-row-1-sub">
+                <div class="y-row-a">
+                    <a href="#">Opiskelijalle</a>
+                    <a href="#">Tietoa meistä</a>
+                    <a href="#">Yhteys- ja laskutustiedot</a>
+                </div>
+                <div class="y-row-a">
+                    <a href="#">Töihin meille</a>
+                    <a href="#">Tietosuojapolitiikka</a>
+                    <a href="#">Blogi</a>
+                </div>
+                <div class="y-row-a">
+                    <a href="#">Wilma</a>
+                    <a href="#">Henkilöstön intra</a>
+                    <a href="#">Markkinointi ja viestintä</a>
+                </div>
+            </div>
+        </div>
+        <div class="y-row-2 center">
+            <a href="#"><img alt="facebook"></a>
+            <a href="#"><img alt="instagram"></a>
+            <a href="#"><img alt="snapchat"></a>
+            <a href="#"><img alt="in"></a>
+            <a href="#"><img alt="twitter"></a>
+            <a href="#"><img alt="youtube"></a>
+        </div>
+        <div class="y-row-3 center">
+            <p>Simonkatu 128, 10000 Helsinki</p>
+            <p class="y-row-3-pad">|</p>
+            <p>Vaihde puh. 09 1234 5678</p>
+            <p class="y-row-3-pad ">|</p>
+            <p class="y-row-3-1">info@koulutsoivatsoiko.fi</p>
+        </div>
+        <div class="y-row-4 center">
+            <p>Copyright © Skill17 Web Development 2019</p>
+        </div>
+    </div>
 </body>
 </html>
