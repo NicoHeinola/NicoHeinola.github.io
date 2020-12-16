@@ -1,4 +1,7 @@
 
+nav {
+    font-size: 18px;
+}
 
 /* GLOBAL */
 #lock {
@@ -10,7 +13,7 @@ nav button:hover {
     text-decoration: underline;
 }
 
-@media all and (min-width: 1041px){
+@media all and (min-width: 1101px){
     /* NAV */
     nav {
         width: 100%;
@@ -25,7 +28,7 @@ nav button:hover {
         height: 0px;
         background: rgb(58,64,90);
         z-index: 4;
-        padding: 30px;
+        padding: 32px;
         top: 0;
     }
 
@@ -58,7 +61,7 @@ nav button:hover {
         position: absolute;
         transition: all 0.5s;
         z-index: 2;
-        padding: 20px;
+        padding: 40px;
         margin-top: 20px;
 
         border-radius: 0px 0px 10px 10px;
@@ -87,7 +90,7 @@ nav button:hover {
     }
 
     .dholder-1 {
-        padding-bottom: 60px;
+        padding-bottom: 20px;
     }
 
     .menu-visible {
@@ -101,12 +104,16 @@ nav button:hover {
 
 
 /* MOBILE */
-@media all and (max-width: 1040px){
+@media all and (max-width: 1100px){
     /* NAV */
     nav {
         width: 100%;
         max-width: 100%;
         color: rgb(249,222,201);
+    }
+
+    h1 {
+        text-align: center;
     }
 
     .bg-nav {

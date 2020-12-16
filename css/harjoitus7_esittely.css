@@ -1,5 +1,20 @@
 
-@media all and (min-width: 1040px){
+    main h1{
+        font-size: 44px;
+        font-weight: normal;
+        color: white;
+    }
+
+    
+    #otsikot h1 {
+        font-weight: bold;
+    }
+
+    main p {
+        font-size: 24px !important;
+    }
+
+@media all and (min-width: 1101px){
     main {
         background: url("../kuvat/background-bell-butterfly.jpg");
         background-repeat: no-repeat;
@@ -8,15 +23,15 @@
         z-index: -2;
     }
 
-    main h1{
-        color: white;
-    }
-
     #row-1 {
         width: 100%;
         display: flex;
         padding: 40px;
         padding-left: 60px;
+    }
+
+    main img {
+        width: 20%;
     }
 
     #otsikot {
@@ -27,6 +42,7 @@
 
     #otsikot h1 {
         padding-right: 100px;
+        font-size: 35px !important;
     }
 
     #bottom-row {
@@ -60,7 +76,7 @@
     }
 }
 
-@media all and (max-width: 1039px){
+@media all and (max-width: 1100px){
     main {
         background: url("../kuvat/background-bell-butterfly.jpg");
         background-repeat: no-repeat;
